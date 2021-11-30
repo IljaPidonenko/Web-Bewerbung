@@ -14,8 +14,9 @@ body{
     background-image: url("files/zwezdi.jpg");
     background-size: cover;
     position: relative;
-    max-height: 50vh;
-    
+    max-height: 100vh;
+    max-width: 200vh;
+    overflow: hidden;
 }
 
 #leben{
@@ -147,7 +148,7 @@ top: 200px;
     justify-content: center;
     scroll-behavior: smooth;
     position: relative;
-    margin-top: -775px;
+    margin-top: -765px;
 }
 
 a{
