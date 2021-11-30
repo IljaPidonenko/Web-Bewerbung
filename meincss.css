@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+
+.container{
+    overflow-y: scroll;
+    width: 900px;
+    height: 600px;
+    background-color: #2E4057;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.avatar{
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 60px;
+    
+}
+.info:after{
+    content: "";
+    width: 900px;
+    height: 90px;
+    background-color: black;
+    opacity: 0.5;
+    bottom: 0px;
+    position: absolute;
+}
+.info{
+    width: 900px;
+    height: 600px;
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 25px;
+    scroll-snap-align: start;
+}
+.info-text{
+    transform: translateX(-20px);
+    width: 600px;
+}
+.container .icon{
+    width: 65px;
+    transition: 0.2s;
+    margin-top: 40px;
+    z-index: 100;
+    margin-right: px;
+}
+.container #icon2{
+    margin-left: 135px;
+}
+.container .icon2{
+    width: 85px;
+    padding-right: 30px;
+    padding-top: 15px
+}
+.icon1:hover{
+    cursor: pointer;
+}
+.tel1,.email{
+ position: relative;
+
+}
+.tel1::after,.email::after{
+    content: "";
+    background-color: black;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif; 
+    color: aliceblue;
+    font-size: 25px;
+    position:absolute ;
+    opacity: 0;
+    height: 35px;
+    width: 0;
+    top: -30px;
+    transform: translateX(-13px);
+    transition: 1s;
+    z-index: 200;
+}
+.tel1:hover::after{
+    content: "0789192302";
+    width: 140px;
+    opacity: 1;
+    overflow-x: hidden;
+}
+.email:hover::after{
+    content: "Ilja.pidonenkom@gmail.com";
+    width: 310px;
+    opacity: 1;
+    overflow-x: hidden;
+    transform: translateX(-13px);
+}
+.lin{
+    margin-bottom: 20px;
+}
+.SuB{
+    scroll-snap-align: start;
+}
+
+.container .info-text{
+    padding: 10px;
+    margin-left: 25px;
+    
+}
+.container .info-text p{
+    display: inline;
+    position: absolute; 
+    margin-top: 30px;
+}
+.SuB{
+    width: 900px;
+    height: 600px;
+}
+.Berufserfahrung{
+    position: relative;
+    
+}
+.Berufserfahrung:after{
+    content: "";
+    width: 900px;
+    height: 80px;
+    background-color: black;
+    opacity: 0.5;
+    bottom: -210px;
+    position: absolute;
+}
+.Berufserfahrung, .lin2{
+    margin-top: 50px;
+}
+.schule{
+    transform: translateY(40px);
+}
+.schule1,td:last-child{
+    padding: 3px 3px 3px 29px;
+    
+}
+.container h2{
+    margin-left: 30px;
+    font-size: 22px;
+}
+.hobbys{
+    width: 900px;
+    height: 570px;
+    position: relative;
+    scroll-snap-align: start;
+    overflow: hidden;
+    
+}
+.language,.EDVken,.hobi{
+    width: 100%;
+    height: 130px;
+    overflow-x: hidden;
+    position: relative;
+}
+.hobbys h2{
+    padding-bottom: 10px;
+}
+.rus,.ger,.eng,.ed{
+    width: 50px;
+    opacity: 1;
+}
+.aft{
+    height: 130px;
+    float: left; 
+    position: absolute; 
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    top: 0;
+}
+
+.aft:hover{
+z-index: 2000;
+transform: translateX(-100px);
+}
+.russia{
+background-color: #1F7A8C;
+width: 40%;
+}
+.germany{
+    background-color:#A31621;
+width: 40%;
+margin-left: 40%;
+}
+.uni{
+    background-color: #6096BA;
+    width: 20%;
+    margin-left: 80%;
+}
+.russia:hover,.germany:hover{
+    width: calc(40vh + 100px);
+}
+.uni:hover{
+    width: calc(20vh + 100px);
+}
+.photosh{
+    background-color: #274C77;
+    width:50%;
+}
+.vegas{
+    background-color: #A3CEF1;
+    width:35%;
+    margin-left:50%;
+}
+.office{
+    background-color: #F79824;
+    width:15%;
+    margin-left:85%;
+}
+.office:hover{
+    width: calc(15vh + 100px);
+}
+.photosh:hover{
+    width: calc(50vh + 100px);
+}
+.vegas:hover{
+    width: calc(35vh + 100px);
+}
+.fitness{
+    background-color: #91F5AD;
+    width: 30%;
+}
+.editing{
+    background-color: #B287A3;
+    width: 30%;
+    margin-left: 30%;
+}
+.gaming{
+    background-color: #A09CB0;
+    width: 20%;
+    margin-left: 60%;
+}
+.fitness:hover,.editing:hover{
+    width: calc(30vh + 50px);
+    transform: translateX(-50px);
+}
+.gaming:hover,.basket:hover{
+    width: calc(20vh + 50px);
+    transform: translateX(-50px);
+}
+.basket{
+    background-color: #FFD449;
+    width: 20%;
+    margin-left: 80%;
+}
+.aft::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+}
+.aft:hover::after{
+    background: rgba(0, 0, 0, 0);
+}
+.germany:hover::after{
+    content: "Deutsch";
+}
+.russia:hover::after{
+    content: "Russisch";
+}
+.uni:hover::after{
+    content: "Englisch";
+}
+.photosh:hover::after{
+    content: "Adobe Photoshop";
+}
+.vegas:hover::after{
+    content: "Vegas Pro";
+}
+.office:hover::after{
+    content: "Microsoft Office";
+}
+.fitness:hover::after{
+    content: "Fitness";
+}
+.gaming:hover::after{
+    content: "Gaming";
+}
+.editing:hover::after{
+    content: "Foto- und Videobearbeitung";
+}
+.basket:hover::after{
+    content: "Basketball";
+}
+.list{
+    margin-top: 50px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+
+.lf{
+    transform: translateX(-15px);
+}
+.sk{
+    transform: translateX(-55px);
+}
+.edv{
+    transform: translateX(-25px);
+}
+.ho{
+    transform: translateX(-45px);
+}
+.str1{
+    transform: translateY(-5px);
+}
+.bf{
+    transform: translateX(29px);
+}
+.jumi{
+    transform: translateX(22px);
+}
+.febr{
+    transform: translateX(22px);
+}
+.produkt{
+    transform: translateX(22px);
+}
+@media only screen and (max-height: 900px) {
+   
+    .fitness:hover,.editing:hover{
+        width: calc(30vh + 100px);
+        transform: translateX(-50px);
+    }
+    .gaming:hover,.basket:hover{
+        width: calc(20vh + 100px);
+        transform: translateX(-50px);
+    }
+    .russia:hover,.germany:hover{
+        width: calc(40vh + 150px);
+    }
+    .uni:hover{
+        width: calc(20vh + 150px);
+    }
+    .office:hover{
+        width: calc(15vh + 150px);
+    }
+    .photosh:hover{
+        width: calc(50vh + 150px);
+    }
+    .vegas:hover{
+        width: calc(35vh + 150px);
+    }
+  }
+  @media only screen and (max-height: 800px) {
+   
+    .fitness:hover,.editing:hover{
+        width: calc(30vh + 150px);
+        transform: translateX(-50px);
+    }
+    .gaming:hover,.basket:hover{
+        width: calc(20vh + 150px);
+        transform: translateX(-50px);
+    }
+    .russia:hover,.germany:hover{
+        width: calc(40vh + 200px);
+    }
+    .uni:hover{
+        width: calc(20vh + 200px);
+    }
+    .office:hover{
+        width: calc(15vh + 200px);
+    }
+    .photosh:hover{
+        width: calc(50vh + 200px);
+    }
+    .vegas:hover{
+        width: calc(35vh + 200px);
+    }
+  }
+  @media only screen and (max-height: 700px) {
+   
+    .russia:hover,.germany:hover{
+        width: calc(40vh + 250px);
+    }
+
+    .photosh:hover{
+        width: calc(50vh + 250px);
+    }
+ 
+  }
+  @media only screen and (max-height: 650px) {
+    .vegas:hover{
+        width: calc(35vh + 250px);
+    }
+  }
+  @media only screen and (max-height: 600px) {
+   
+    .photosh:hover{
+        width: calc(50vh + 300px);
+    }
+  }
+  @media only screen and (max-width: 1050px) {
+   
+    .fitness:hover,.editing:hover{
+        width: calc(375px + 10px);
+        transform: translateX(-50px);
+    }
+    .gaming:hover,.basket:hover{
+        width: calc(250px + 10px);
+        transform: translateX(-50px);
+    }
+    .russia:hover,.germany:hover{
+        width: calc(500px + 10px);
+    }
+    .uni:hover{
+        width: calc(250px + 10px);
+    }
+    .office:hover{
+        width: calc(187.5px + 10px);
+    }
+    .photosh:hover{
+        width: calc(625px + 10px);
+    }
+    .vegas:hover{
+        width: calc(437.5px + 10px);
+    }
+  }

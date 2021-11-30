@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+body{
+    background-image: url("files/zwezdi.jpg");
+    background-size: cover;
+    position: relative;
+    max-height: 50vh;
+    
+}
+
+#leben{
+margin-top: 250px;
+}
+.sagol{
+   
+    margin: auto;
+    width: 1200px;
+    position: relative;
+    height: 200px;
+}
+.titel{
+    
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 300px;
+    backdrop-filter: blur(2px);
+    margin-left: auto;
+    margin-right: auto;
+    
+}   
+.animate{
+    animation: move-titel;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    
+}
+
+.arrow{
+    
+    background-color: #3438ad;
+    font-size: 70px;
+    color: aliceblue;
+    position: absolute;
+    margin: auto;
+    left: 40%;
+    padding: 0px 70px;
+    border-radius: 80px;
+    opacity: 0.8;
+    user-select: none;
+    line-height: 1.4;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+.arrow:hover{
+    opacity: 1.2;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.arrow3{
+    animation: arrow-weg;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+.lebenslauf{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    
+   
+}
+.img1, .img3, .img4{
+    width: 300px;
+    position: absolute;
+    transition: 0.2s;
+    top: 200px;
+}
+.img1:hover, .img2:hover, .img3:hover, .img4:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img1:active, .img2:active, .img3:active, .img4:active{
+    transform: scale(1);
+    cursor: pointer;
+}
+.img1{
+    left: 50px;
+    border-radius: 8px;
+    
+}
+.img2{
+margin-top: 350px;
+left: 16px;
+width: 350px;
+margin-top: 306px;
+position: absolute;
+transition: 0.2s;
+top: 200px;
+
+}
+.img3{
+    right: 50px;
+}
+.img4{
+   right: 50px;
+    margin-top: 350px;
+}
+.moti{
+    font-family: 'Outfit', sans-serif; 
+    color: aliceblue;
+    font-size: 21px;
+    width: 900px;
+    margin: auto;
+    transform: translateY( -150px);
+    padding: 20px;
+    background-color: #0f0b2b;
+    box-shadow:10px 10px 15px #0a081f inset;
+    border-radius: 15px;
+    letter-spacing: 0.02em;
+    margin-top: -50px;
+
+}
+.zimg{
+    width: 900px;
+    height: 600px;
+}
+
+.zeugnisse, .mult, .container,.zerti,.nav,.navm{
+    overflow-y: scroll;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 750px;
+    border-radius: 15px;
+    transition: 2s; 
+    justify-content: center;
+    scroll-behavior: smooth;
+    position: relative;
+    margin-top: -775px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navi{
+    position: fixed;
+    margin-top: 10px;
+}
+.navi li{
+    border: 2px solid black;
+    font-family: 'Outfit', sans-serif; 
+    color: aliceblue;
+    font-size: 30px;
+    list-style: none;
+    background-color:#181352;
+    padding: 3px;
+    opacity: 0.8;
+    border-top: 2px solid white;
+    
+}
+li:hover{
+    opacity: 1.2;
+    cursor: pointer;
+}
+.abschluss::after{
+    content: "Abschlusszeugnis";
+    border: 2px solid black;
+    font-family: 'Outfit', sans-serif; 
+    color: aliceblue;
+    font-size: 30px;
+    list-style: none;
+    background-color:#181352;
+    padding: 3px;
+    opacity: 0;
+    border-top: 2px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    pointer-events: none;
+    width: 50px;
+    overflow-x: hidden;
+}
+.abschluss:hover::after{
+    opacity: 1;
+    width: 240px;
+}
+.zehna, .zehnc, .neunc, .Muone, .Mutwo, .Muthree, .Mufour, .Mufive, .Musix{
+    width: 900px;
+    position: absolute;
+    transition: 2s;
+    
+}
+.zehnc, .Mutwo{
+    margin-top: 1250px;
+    border-top:10px solid black;
+}
+.neunc, .Muthree{
+    margin-top: 2500px;
+    border-top:10px solid black;
+}
+.Mufour{
+    margin-top: 3750px;
+    border-top: 10px solid black;
+}
+.Mufive{
+    margin-top: 5000px;
+    border-top: 10px solid black;
+}
+.Musix{
+    margin-top: 6250px;
+    border-top: 10px solid black;
+}
+
+.zerti, .zeugnisse, .nav, .navm, .mult,.container, input[type="radio"]{
+    display: none;
+}
+#snu:checked ~ .zerti{
+    display: block;
+}
+#sul:checked ~ .zeugnisse{
+    display: block;
+}
+#sul:checked ~ .nav{
+    display: block;
+}
+#mul:checked ~ .mult{
+    display: block;
+}
+#mul:checked ~ .navm{
+    display: block;
+}
+#leb:checked ~ .container{
+    display: block;
+}
+.lebenslaufimg1{
+    animation: move-lebenslauf;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes move-lebenslauf{
+    0%{
+        opacity: 0;
+        display: block;
+    }
+    75%{
+        opacity: 0;
+        display: block;
+    }
+    100%{
+        opacity: 1;
+        display: block;
+    }
+} 
+
+@keyframes arrow-weg{
+    0%{
+        
+        background-color: #3438ad;
+    font-size: 70px;
+    color: aliceblue;
+    position: absolute;
+    margin: auto;
+    left: 40%;
+    padding: 0px 70px;
+    border-radius: 80px;
+    opacity: 0.8;
+    user-select: none;
+    line-height: 1.4;
+    transition: 0.2s;
+    margin-top: 10px;
+    
+    }
+    100%{
+        background-color: #3438ad;
+    font-size: 70px;
+    color: aliceblue;
+    position: absolute;
+    margin: auto;
+    left: 40%;
+    padding: 0px 70px;
+    border-radius: 80px;
+    opacity: 0;
+    user-select: none;
+    line-height: 1.4;
+    transition: 0.2s;
+    margin-top: 10px;
+
+    }
+    
+}
+
+@keyframes move-titel{
+    0%{
+        font-family: 'Outfit', sans-serif;
+        font-size: 50px;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 300px;
+        backdrop-filter: blur(2px);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    25%{
+        font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 300px;
+    backdrop-filter: blur(2px);
+    margin-left: auto;
+    margin-right: auto;
+    }
+    100%{
+        font-family: 'Outfit', sans-serif;
+        font-size: 25px;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 10px;
+        backdrop-filter: blur(2px);
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .img1 {
+      left:0;
+    }
+      .img2{
+          left:0;
+          margin-left: -35px;
+      }
+      .img3,.img4{
+          right:0;
+      }
+      .img1,.img3{
+          top: 100px;
+      }
+      .img2{
+          margin-top: 200px;
+      }
+      .img4{
+          margin-top: 250px;
+      }
+      .navi{
+          margin-top:auto;
+          margin-bottom: auto;
+          position: fixed;
+      }
+      #leben{
+          margin-top:210px ;
+      }
+      .moti{
+          margin-top: -60px;
+      }
+  }
+  @media only screen and (max-width: 1600px) {
+    .img1 {
+      left:0;
+      margin-right: 40px;
+    }
+      .img2{
+          left:0;
+          margin-left: -30px;
+      }
+      .img3,.img4{
+          right:0;
+          margin-right: -40px;
+      }
+      #leben{
+          margin-left: 25px;
+      }
+      .zeugnisse, .mult, .container,.zerti,.nav,.navm{
+        
+        width: 900px;
+        height: 600px;
+        margin-top: -750px;
+    }
+      .moti{
+        margin-top: -60px;
+    }
+      
+  }
+  @media only screen and (max-width: 1050px) {
+    .img1 {
+      left:0;
+      transform: translateX(10px);
+    }
+      .img2{
+          left:0;
+          margin-left: -25px;
+      }
+      .img3,.img4{
+          right:0;
+          margin-right: -150px;
+      }
+      .img4{
+          margin-top: 1000px;
+      }
+      .img2{
+          margin-top: 950px;
+      }
+      .zeugnisse, .mult, .container,.zerti,.nav,.navm{
+        
+        width: 900px;
+        height: 600px;
+        margin-top: -600px;
+        margin-left: 150px;
+    }
+    .moti{
+        width: 900px;
+        transform: translateY( 120px);
+        margin-left: 290px;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    .zeugnisse,.mult,.container,.zerti,.nav,.navm{
+        
+        width: 900px;
+        height: 600px;
+        margin-top: -700px;
+        margin-left: 150px;
+    }
+    
+  }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <script>
+        
+        function move() {
+          var targetElement = document.getElementById("target");
+          targetElement.className = "animate";
+
+          var arrow2Element = document.getElementById("arrow2");
+          arrow2Element.className = "arrow3";
+
+          var lebenElement = document.getElementById("leben");
+          lebenElement.className = "lebenslaufimg1";
+        }
+          </script>
+    <link rel="stylesheet" href="bev2.css">
+    <link rel="stylesheet" href="meincss.css">
+    <title>Bewerbung Ilja Pidonenko</title>
+</head>
+<body>
+<div class="sagol">
+    
+    <label for="text"><div id="target" class="titel">
+        <h1>Ilja Pidonenko</h1> <h2>Web Bewerbung</h2> <h3>Informatiker EFZ Applikationsentwicklung</h3>
+    </div></label>
+    <button type="button" onclick="move();" id="arrow2" class="arrow">➜</button>
+</div>
+<div id="leben"  class="lebenslauf">
+    <label for="leb"><img  class="img1" src="files/cvp.png" alt="Lebenslauf"></label>
+    <input type="radio" id="leb" name="öffnen">
+    <input type="radio" id="text" name="öffnen">
+
+    <label for="mul"><img class="img2" src="files/exam.png" alt="Multichek"></label>
+    <input type="radio" id="mul" name="öffnen">
+
+    <label for="snu"><img class="img3" src="files/report-card.png" alt="Schnuppertag"></label>
+    <input type="radio" id="snu" name="öffnen">
+
+    <label for="sul"><img class="img4" src="files/mortarboard.png" alt="Schulzeugnisse"></label>
+    <input type="radio" id="sul" name="öffnen">
+
+    <div class="moti">
+    <p> Hallo! Ich bin froh sie hier, auf meiner ersten Web Bewerbung Seite zu sehen. Lassen sie mich vorstellen.
+        Mein Name ist Ilja und ich bin 20 Jahre alt. Ich bin in der Ukraine geboren und lebte acht Jahre in Deutschland. Nach dem Abschliessen der Albertville-Realschule in Deutschland, welche der Sekundarschule in der Schweiz entspricht, bin ich mit der Familie in die Schweiz umgezogen. Neues Land, neue Menschen und neue Mentalität. Es bräuchte Zeit bis ich mich zu dem neuen Ort adoptiert habe.
+        Ich könnte mir keine Lehre finden, da das Schulsystem in der Schweiz sich etwas von der deutschen unterscheidet.
+        Meine Noten sind nicht perfekt, da ich gar nicht an den Schulfächern interessiert war. Ich wusste einfach nicht, was ich nach der Schule werden möchte. Aber ich war immer neugierig über die Informatik, auch wenn wir in der Schule nur solche Grundlagen gelernt haben wie man PowerPoint, Microsoft Word und Paint benutzt. 
+        Ich genieße es Illustrationen in Photoshop zu bearbeiten, die Grundlagen von HTML und CSS zu lernen.
+        Als ich rausgefunden habe, was mich wirklich interessiert, verstand ich die Wichtigkeit zu lernen.
+        Die ganzen Sachen, die mir passiert sind, endschuldigen mich nicht, so habe ich entschieden die Sache in eigene Hände zu nehmen. Ich habe den Multichek ICT mit überdurchschnittlichem Resultat abgelegt.
+        Ich lernte im Internet, wie man einen Code in HTML und CSS schreibt. Es hat etwa zwei Wochen gebraucht, die CSS Animationen zu erstellen. Nun können sie meine meine Website anschauen und meinen Progress in Self-Study sehen.
+        Nun bewerbe ich mich bei ihrer Firma, so es mir helfen wird meine Kenntnisse im Programmieren zu vertiefen. Ich weiss, es wird nicht leicht sein, ich habe viel zu lernen und ich werde mein Bestes geben um die Gelegenheit nicht zu verlieren. 
+        
+    </p>
+</div>
+<div class="zerti">
+    <img class="zimg" src="files/Zertifikat-Ilja-Pidonenko-001.jpg" alt="">
+</div>
+<div class="zeugnisse">
+    <img id="zehna" class="zehna" src="Schulzeugnisse/Abschluss.jpg" alt="Abschlusszeugniss">
+    <img id="zehnc" class="zehnc" src="Schulzeugnisse/10c.jpg" alt="">
+    <img id="neunc" class="neunc" src="Schulzeugnisse/9c.jpg" alt=""> 
+    
+        <ul class="navi">
+            <a class="abschluss" href="#zehna"><li>A.</li></a>
+            <a href="#zehnc"><li>10c</li></a>
+            <a href="#neunc"><li>9c</li></a>
+        </ul>
+    
+</div>
+<div class="mult">
+    <img id="mone" class="Muone" src="Multichek/Multione.jpg" alt="">
+    <img id="mtwo" class="Mutwo" src="Multichek/Multitwo.jpg" alt="">
+    <img id="mthree" class="Muthree" src="Multichek/Multithree.jpg" alt="">
+    <img id="mfour" class="Mufour" src="Multichek/Multifour.jpg" alt="">
+    <img id="mfive" class="Mufive" src="Multichek/Multifive.jpg" alt="">
+    <img id="msix" class="Musix" src="Multichek/Multisix.jpg" alt="">
+    
+        <ul class="navi">
+            <a href="#mone"><li>1</li></a>
+            <a href="#mtwo"><li>2</li></a>
+            <a href="#mthree"><li>3</li></a>
+            <a href="#mfour"><li>4</li></a>
+            <a href="#mfive"><li>5</li></a>
+            <a href="#msix"><li>6</li></a>
+        </ul>
+       
+</div>
+<div class="container">
+    
+    <div class="info">
+        <img class="avatar" src="files/Foto.jpg" alt="*Bewerbungsfoto*">
+        <div class="info-text">
+        <h1>Ilja Pidonenko</h1>
+        <a  class="tel1" href="tel:+41789192302"><img class="icon icon1" src="files/loc.png" alt=""></a>
+        <a  class="email" href="mailto:ilja.pidonenkom@gmail.com"><img id="icon2" class="icon1 icon" src="files/email.png" alt=""></a>
+        <div><img class="icon2" src="files/adress.png" alt="Adresse"><p> Bern 3027, Holenackerstrasse 11</p></div>
+        <div><img class="icon2" src="files/nation.png" alt="Staatsangehörigkeit"><p> Deutsch</p></div>
+        <div><img class="icon2" src="files/birth.png" alt="Geburtstag"><p> 29.10.2001</p></div>
+        <div><img class="icon2" src="files/sex.png" alt="Geschlecht"><p> Männlich</p></div>
+        </div>
+        
+    </div> 
+    <div class="SuB">
+    <div class="schule">
+        <h2>Schulbildung</h2>
+        <table class="schule1">
+            <tr>
+                <td>07.2019</td>
+                <td>Deutscher Realschulabscluss (gleichgesetzt zur Schweizer 
+                    Sekundarschule)</td>
+            </tr>
+            <tr>
+                <td>09.2013-07.2019</td>
+                <td>Albertville-Realschule in Deutschland,
+                    Winnenden</td>
+            </tr>
+            <tr>
+                <td>09.2009-08.2013 </td>
+                <td>Eichendorf-Schule in Deutschland,
+                    Schwaikheim</td>
+            </tr>
+        </table>
+    </div>
+    <hr class="lin lin2">
+    <div class="Berufserfahrung">
+        <h2>Berufserfahrung</h2>
+        <table class="bf">
+            <tr>
+                <td>Arbeitgeber/Adresse</td>
+                <td class="jumi">Jumi AG/Lindentalstrasse 2,
+                    3067 Vechingen</td>
+            </tr>
+            <tr>
+                <td>Zeitraum</td>
+                <td class="febr">Februar 2021 – Jetzige Zeit</td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td class="produkt">Produktionsmitarbeiter</td>
+            </tr>
+            <tr>
+                <td class="aufgabe">Aufgabenbereiche</td>
+                <td class="list">
+                    <ul>
+                        <li>Das Bearbeiten der Käse</li>
+                        <li>Das Nachfüllen vom Lager</li>
+                        <li>Die Bearbeitung von Bestellungen</li>
+                        <li>Die Vorbereitung für die Lieferungen</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <hr class="lin">
+    <div class="hobbys">
+        <h2>Interessen und Kentnisse</h2>
+        <h2>Sprachkenntnisse</h2>
+        
+            <div class="language">
+                <div class="russia aft"><img class="rus" src="files/russia.png" alt=""></div>
+                <div class="germany aft"><img class="ger" src="files/germany.png" alt=""></div>
+                <div class="uni aft"><img src="files/uni.png" alt="" class="eng"></div>
+            </div>
+            <h2>EDV-Kenntnisse</h2>
+            <div class="EDVken" >
+                <div class="photosh aft"><img class="ed" src="files/photo.png" alt=""></div>
+                <div class="vegas aft "><img class="ed" src="files/vegas.png" alt=""></div>
+                <div class="office aft"><img class="ed" src="files/office.png" alt=""></div> 
+               
+            </div>
+            <h2>Hobbys</h2>
+            <div class="hobi">
+                <div class="fitness aft"><img class="ed" src="files/hantel.png" alt=""></div>
+                <div class="editing aft"><img class="ed" src="files/editing.png" alt=""></div> 
+                <div class="basket aft"><img class="ed" src="files/basketball.png" alt=""></div> 
+                <div class="gaming aft"><img class="ed" src="files/joystick.png" alt=""></div> 
+            </div>
+        
+    </div>
+</div>
+</div>
+</body>
+</html>
