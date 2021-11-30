@@ -14,7 +14,7 @@ body{
     background-image: url("files/zwezdi.jpg");
     background-size: cover;
     position: relative;
-    max-height: 80vh;
+    max-height: 60vh;
     max-width: 200vh;
     overflow: hidden;
 }
