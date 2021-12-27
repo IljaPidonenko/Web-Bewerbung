@@ -209,6 +209,11 @@ li:hover{
     margin-top: 1250px;
     border-top:10px solid black;
 }
+.zimg2{
+    margin-top: -10px;
+    border-top:10px solid black;
+    width: 900px;
+}
 .neunc, .Muthree{
     margin-top: 2500px;
     border-top:10px solid black;
